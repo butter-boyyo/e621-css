@@ -1,0 +1,173 @@
+:root {
+    /* Default e621.net colors */
+    --palette-background-red:#76312e;
+    --palette-background-red-d5:#642927;
+    --palette-background-red-d10:#512220;
+    --palette-background-yellow:#827428;
+    --palette-background-yellow-d5:#6f6322;
+    --palette-background-yellow-d10:#5b511c;
+    --palette-background-green:#227d2a;
+    --palette-background-green-d5:#1d6923;
+    --palette-background-green-d10:#17551d;
+    --palette-background-grey:#60686f;
+    --palette-background-grey-d5:#545b61;
+    --palette-background-gold:#ddc676;
+    --palette-background-gold-l10:#e7d79f;
+    --palette-background-gold-d10:#d3b54d;
+    --palette-background-gold-d20:#be9e2f;
+    --palette-background-orange:#ec8e49;
+    --palette-background-orange-d5:#ea8032;
+    --palette-background-orange-d10:#bb5b14;
+    --palette-background-blue:#1f3c67;
+    --palette-background-blue-l10:#2b538e;
+    --palette-background-blue-d5:#193153;
+    --palette-background-blue-d10:#132540;
+    --palette-text-white:#fff;
+    --palette-text-red:#fe6a64;
+    --palette-text-yellow:#ffd666;
+    --palette-text-green:#4caf50;
+    --palette-text-grey:#aaa;
+    --palette-plain-white:#fff;
+    --palette-plain-black:#000;
+    --palette-plain-green:#2ec035;
+    --palette-plain-yellow:#ecec26;
+    --palette-plain-blue:#2a75ff;
+    --palette-plain-red:#ff5050;
+    /* Custom Colors */
+    --butter-content-seperator-background-color: var(--color-section-lighten-5);
+    --butter-content-seperator-shadow-color: var(--color-section);
+    /* Custom sizings */
+    --butter-border-radius: 0.25rem;
+    --butter-border-size: 0.25rem;
+    --butter-button-shadow-y: 0.25rem;
+    --butter-icon-button-padding: 0.3rem;
+    --butter-comment-list-gap: 1rem;
+    --butter-section-seperator-height: 0.5rem;
+}
+body {
+    --image-background:url(/vite/assets/background-eUFJZNrO.png);
+    --image-background-position:unset;
+    --image-background-repeat:unset;
+    --image-background-size:unset;
+    --color-background:#020f23;
+    --color-foreground:#152f56;
+    --color-section:#1f3c67;
+    --color-section-lighten-5:#25477b;
+    --color-section-lighten-10:#2b538e;
+    --color-section-darken-5:#193153;
+    --color-table-border:#2b538e;
+    --color-section-pending:#1f3c67;
+    --color-section-pending-border:#020f23;
+    --color-text:#fff;
+    --color-text-muted:#999;
+    --color-text-white:#fff;
+    --color-text-table-header:#e6e6e6;
+    --color-link:#b4c7d9;
+    --color-link-hover:#e9f2fa;
+    --color-link-active:#e8c446;
+    --color-button-active:#e8c446;
+    --color-link-last-page:#666;
+    --color-success:darkgreen;
+    --color-success-darken-5:#004b00;
+    --color-danger:maroon;
+    --color-danger-darken-5:#670000;
+    --color-danger-darken-10:#4d0000;
+    --color-warning:sienna;
+    --color-warning-darken-5:#8c4827;
+    --color-rating-explicit:#e45f5f;
+    --color-rating-questionable:#ffe666;
+    --color-rating-safe:#3e9e49;
+    --color-score-positive:#3e9e49;
+    --color-score-negative:#e45f5f;
+    --color-active-tag:#006ffa;
+    --color-dtext-quote:#b4c7d9;
+    --color-dtext-code:#ffe380;
+    --color-dtext-section:#17a2b8;
+    --color-user-member:#b4c7d9;
+    --color-user-member-alt:#2e76b4;
+    --color-user-privileged:#b4c7d9;
+    --color-user-privileged-alt:#2e76b4;
+    --color-user-blocked:#b4c7d9;
+    --color-user-blocked-alt:#2e76b4;
+    --color-user-former-staff:#78dca5;
+    --color-user-former-staff-alt:#4da073;
+    --color-user-staff:#d82828;
+    --color-user-staff-alt:#cc5151;
+    --color-user-janitor:#d82828;
+    --color-user-janitor-alt:#cc5151;
+    --color-user-moderator:#d82828;
+    --color-user-moderator-alt:#cc5151;
+    --color-user-admin:#e69500;
+    --color-user-admin-alt:#9d6703;
+    --color-tag-general:#b4c7d9;
+    --color-tag-general-alt:#2e76b4;
+    --color-tag-artist:#f2ac08;
+    --color-tag-artist-alt:#fbd67f;
+    --color-tag-contributor:silver;
+    --color-tag-contributor-alt:#71706e;
+    --color-tag-copyright:#d0d;
+    --color-tag-copyright-alt:#ff5eff;
+    --color-tag-character:#0a0;
+    --color-tag-character-alt:#2bff2b;
+    --color-tag-species:#ed5d1f;
+    --color-tag-species-alt:#f6b295;
+    --color-tag-invalid:#ff3d3d;
+    --color-tag-invalid-alt:#ffbdbd;
+    --color-tag-meta:#fff;
+    --color-tag-meta-alt:#666;
+    --color-tag-lore:#282;
+    --color-tag-lore-alt:#5fdb5f;
+    --color-tag-pool:wheat;
+    --color-tag-pool-alt:#d0b27a;
+    --color-spoiler-link:#b4c7d9;
+    --color-spoiler-link-hover:#e9f2fa;
+}
+#user_favorite_tags {
+    width: 100%;
+    border-left: var(--butter-border-size) solid var(--color-dtext-section);
+}
+#user_custom_style {
+    width: 100%;
+    border-left: var(--butter-border-size) solid var(--color-danger);
+}
+.post-search-form button {
+    padding: var(--butter-icon-button-padding);
+}
+form.simple_form > tabs-content {
+    max-width: 100%;
+}
+.new-comment > h2 {
+    display: none;
+}
+.comments > #comments > .comments-for-post {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-grow: stretch;
+    gap: var(--butter-comment-list-gap);
+}
+.comments > #comments > .comments-for-post::before {
+    content: "";
+    width: 100%;
+    height: var(--butter-section-seperator-height);
+    top: 0;
+    left: 0;
+    background-color: var(--butter-content-seperator-background-color);
+    position: relative;
+    border-radius: var(--butter-border-radius);
+    box-shadow: 0 var(--butter-button-shadow-y) 0 0 var(--butter-content-seperator-shadow-color);
+}
+.comments > #comments > .comments-for-post > .row.notices {
+    order: 1;
+    position: relative;
+}
+.comments > #comments > .comments-for-post > .list-of-comments {
+    order: 3;
+    width: 100%:
+}
+.comments > #comments > .comments-for-post > .new-comment {
+    order: 2;
+    width: 100%;
+    position: relative;
+}
